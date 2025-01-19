@@ -1,0 +1,141 @@
+/* the main configuration file for .root */
+:root{
+  --clr-main : #003366;
+  --clr-title : #007acc;
+  --clr-txt : #333;
+  --clr-black : black;
+  --clr-white : #ffffff;
+  --txt-aln : center;
+  --itm-aln : center;
+  --dsp-flex : flex;
+  --dps-grid : grid;
+  --txt-dec : none;  
+}
+
+body{
+  font-family: "Ubuntu Sans Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 100%;
+  font-style: normal;
+  margin : 0;
+  padding : 0;
+  font-size: 100%;
+}
+
+/* the main style of header only */
+
+header {
+  background-color: var(--clr-main);
+  padding : 10px 0 15px;
+  text-align: var(--txt-aln);
+  img {
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border : 3px solid var(--clr-white);
+  }
+  h1 {
+    font-size: 30px;
+    color: var(--clr-black);
+  }
+  h2{
+    font-size: 25px;
+    color: var(--clr-black);
+  }
+  section {
+    address {
+      color : var(--clr-white);
+      a{
+        color : var(--clr-white);
+      }
+    }
+  }
+}
+
+/* The main style of the main tag */
+
+main{
+
+  background-image: url("http://jobrepair.ddns.net/multimedia/job.png");
+  background-repeat: no-repeat; /* one photo displayed */
+  background-position: var(--txt-aln); /* center image */
+  background-size: cover; /*cover all the page contenair */
+  color: var(--clr-black); */ 
+  h3{
+    text-align: var(--txt-aln);
+  }
+  section {
+    > p {
+      font-size : 20px;
+      color: var(--clr-black);
+      text-align: var(--txt-aln);
+    }
+    h3 {
+        font-size: 25px;
+        text-align: var(--txt-aln);
+    }
+  }
+  .dsp-grid {
+        display: var(--dps-grid);
+        grid-template-columns: repeat(4, 1fr);
+        gap : 10px;
+        article{
+        box-shadow: 2px 2px 2px var(--clr-black);
+        background-color: var(--clr-title);
+        border-radius: 10px;
+        text-align: var(--txt-aln);
+        padding: 10px 10px 5px;
+        a{
+          color : var(--clr-black);
+        }
+      }
+      h3 {
+        grid-column: 1 / -1;
+      }
+      
+
+      }
+  .dsp-ctr { 
+    text-align: var(--txt-aln);   
+    h3{
+      color : --clr-black;
+      font-size : 25px;
+      text-align: var(--txt-aln);
+    }
+    div{
+    }
+    ul {
+      list-style-type: none;
+      li {
+        padding: 5px;
+      }
+    }
+  }
+  /* main style for references */
+  section:last-child{
+    display: var(--dps-grid);
+    grid-template-columns: repeat(2, 50%);
+    color : var(--clr-white);
+    background-color: var(--clr-txt);
+    padding : 10px 10px;
+    text-align: var(--txt-aln);
+    h3{
+      grid-column: 1 / -1;
+    }
+    a {
+      color : var(--clr-white);
+    }
+  }
+}
+
+
+/* footer */
+footer {
+  background-color: var(--clr-main);
+  color : var(--clr-white);
+  text-align: var(--txt-aln);
+  padding : 5px 0 5px 0;
+  a{
+    color : var(--clr-white);
+  }
+}
