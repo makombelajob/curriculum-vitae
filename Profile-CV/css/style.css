@@ -9,7 +9,9 @@
   --itm-aln : center;
   --dsp-flex : flex;
   --dps-grid : grid;
-  --txt-dec : none;  
+  --txt-dec : none;
+  --bx-shadow : 2px 2px 2px black;  
+  --bx-shadow-2 : 0px 2px 2px #007acc;
 }
 
 body{
@@ -78,8 +80,9 @@ main{
         display: var(--dps-grid);
         grid-template-columns: repeat(4, 1fr);
         gap : 10px;
+        padding: 10px;
         article{
-        box-shadow: 2px 2px 2px var(--clr-black);
+        box-shadow: var(--bx-shadow);
         background-color: var(--clr-title);
         border-radius: 10px;
         text-align: var(--txt-aln);
@@ -116,7 +119,7 @@ main{
     display: var(--dps-grid);
     grid-template-columns: repeat(4, 1fr);
     gap : 10px;
-    padding : 10px;
+    padding : 0;
     width: 100%;
     
     h3 {
@@ -126,11 +129,31 @@ main{
     article {
       padding: 10px;
       margin: 10px;
-      box-shadow: 0 2px 4px var(--clr-main);
+      box-shadow: var(--bx-shadow);
       background-color: var(--clr-txt);
       color: var(--clr-white);
       box-sizing: border-box;
       border-radius : 10px;
+    }
+  }
+  /* main style for competences linguistiques */
+  .dsp-flex {
+    text-align: var(--txt-aln) ;
+    h3 {
+      margin-top : 60px;
+    }
+    ul {
+      display: var(--dsp-flex);
+      gap : 20px;
+      padding : 10px;
+      li {
+        text-align: var(--txt-aln);
+        padding : 4px;
+        margin: 10px auto;
+        background-color: var(--clr-title);
+        box-shadow: var(--bx-shadow);
+        border-radius: 10px;
+      }
     }
   }
   /* main style for references */
