@@ -92,6 +92,7 @@ main{
           color : var(--clr-black);
         }
       }
+      /* important value for good look */
       h3 {
         grid-column: 1 / -1;
       }
@@ -121,7 +122,6 @@ main{
     gap : 10px;
     padding : 0;
     width: 100%;
-    
     h3 {
       grid-column: 1 / -1 ;
       text-align: var(--txt-aln);
