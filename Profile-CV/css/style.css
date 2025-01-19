@@ -133,6 +133,15 @@ main{
       color: var(--clr-white);
       box-sizing: border-box;
       border-radius : 10px;
+      a{
+        color : var(--clr-white);
+        &:hover{
+          color : rgb(0, 9, 128);
+        }
+        &:visited{
+          color : orangered;
+        }
+      }
     }
   }
   /* main style for competences linguistiques */
