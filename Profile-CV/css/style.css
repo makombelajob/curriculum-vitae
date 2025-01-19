@@ -27,7 +27,8 @@ body{
 
 header {
   background-color: var(--clr-main);
-  padding : 10px 0 15px;
+  padding : 10px 10px;
+  margin-top: 0;
   text-align: var(--txt-aln);
   color: var(--clr-white);
   img {
