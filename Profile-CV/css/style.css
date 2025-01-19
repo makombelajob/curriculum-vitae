@@ -55,7 +55,7 @@ header {
 
 main{
 
-  background-image: url("http://jobrepair.ddns.net/mutlimedia/job.png");
+  background-image: url("http://jobrepair.ddns.net/multimedia/job.png");
   background-repeat: no-repeat; /* one photo displayed */
   background-position: var(--txt-aln); /* center image */
   background-size: cover; /*cover all the page contenair */
