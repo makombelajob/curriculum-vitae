@@ -84,6 +84,7 @@ main{
         border-radius: 10px;
         text-align: var(--txt-aln);
         padding: 10px 10px 5px;
+        box-sizing: border-box;
         a{
           color : var(--clr-black);
         }
@@ -108,6 +109,28 @@ main{
       li {
         padding: 5px;
       }
+    }
+  }
+  /* the main style for the class dsp-grid2 */
+  .dsp-grid2 {
+    display: var(--dps-grid);
+    grid-template-columns: repeat(4, 1fr);
+    gap : 10px;
+    padding : 10px;
+    width: 100%;
+    
+    h3 {
+      grid-column: 1 / -1 ;
+      text-align: var(--txt-aln);
+    }
+    article {
+      padding: 10px;
+      margin: 10px;
+      box-shadow: 0 2px 4px var(--clr-main);
+      background-color: var(--clr-txt);
+      color: var(--clr-white);
+      box-sizing: border-box;
+      border-radius : 10px;
     }
   }
   /* main style for references */
