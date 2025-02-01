@@ -33,6 +33,7 @@ header {
     font-size: 2rem;
     color: var(--clr-black);
     padding: 1rem;
+    text-align : var(--txt-alin);
     figure {
         margin-top: 0;
         img {
