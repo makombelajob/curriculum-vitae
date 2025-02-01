@@ -1,0 +1,199 @@
+/* the main configuration file for .root */
+:root {
+    font-size: 10px;
+    --clr-main: #003366;
+    --clr-title: #007acc;
+    --clr-txt: #333;
+    --clr-black: black;
+    --clr-white: #ffffff;
+    --txt-aln: center;
+    --itm-aln: center;
+    --dsp-flex: flex;
+    --dps-grid: grid;
+    --txt-dec: none;
+    --bx-shadow: 2px 2px 2px black;
+}
+
+body,
+html {
+    font-family: "Ubuntu Sans Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 100%;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+header {
+    background-color: var(--clr-title);
+    font-size: 2rem;
+    color: var(--clr-black);
+    padding: 1rem;
+    figure {
+        margin-top: 0;
+        img {
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: var(--bx-shadow);
+            border: 1px solid rgba(54, 85, 172, 0.473);
+            margin: 1rem;
+        }
+    }
+    h1 {
+        text-transform: uppercase;
+    }
+    p,
+    h1,
+    h2 {
+        text-align: var(--txt-aln);
+    }
+    address a {
+        text-decoration: var(--txt-dec);
+        color: var(--clr-white);
+    }
+}
+main {
+    padding: 1rem;
+    background-image: url("http://jobrepair.ddns.net/multimedia/jobb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: var(--txt-aln);
+    color: var(--clr-black);
+    #hero {
+        font-size: 2rem;
+        h3 {
+            text-align: var(--txt-aln);
+            color: var(--clr-black);
+            font-size: 3rem;
+        }
+    }
+    .dsp-grid {
+        display: var(--dsp-flex);
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 1.7rem;
+        text-align: var(--txt-aln);
+        h3 {
+            color: var(--clr-white);
+            font-size: 2.5rem;
+        }
+        article {
+            box-shadow: var(--bx-shadow);
+            border-radius: 1rem;
+            background-color: var(--clr-main);
+            color: var(--clr-white);
+            padding: 0.5rem;
+        }
+        a {
+            color: var(--clr-black);
+        }
+    }
+    .color {
+        article {
+            background-color: var(--clr-txt);
+            padding: 1rem;
+        }
+    }
+    section:nth-of-type(5) {
+        font-size: 1.5rem;
+        h3 {
+            text-align: var(--txt-aln);
+        }
+        ul {
+            color: var(--clr-white);
+            list-style: var(--txt-dec);
+            background-color: var(--clr-main);
+            box-shadow: var(--bx-shadow);
+            border-radius: 1rem;
+            padding-inline: 1rem;
+            padding-block: 1rem;
+            li {
+                font-size: 1.7rem;
+                font-weight: 300;
+                strong {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    section:nth-of-type(6) {
+        font-size: 1.5rem;
+        display: var(--dsp-flex);
+        flex-direction: column;
+        justify-content: space-between;
+        gap : 1rem;
+        h3{
+            font-size: 2rem;
+            text-align: var(--txt-aln);
+            width: 100%; 
+        }
+        article{
+            box-shadow: var(--bx-shadow);
+            background-color: var(--clr-txt);
+            color: var(--clr-white);
+            border-radius: 1rem;
+            padding: 1rem;a{
+                color: var(--clr-white);
+            }
+        }
+    }
+}
+footer{
+    background-color: var(--clr-title);
+    text-align: var(--txt-aln);
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    a{
+        color: var(--clr-white);
+    }
+}
+@media(min-width: 768px){
+    :root{
+        font-size: 15px;
+    }
+    body,html{
+        max-width: 100%;
+    }
+    header{
+        display: var(--dsp-flex);
+        flex-direction: column;
+        align-items: var(--txt-aln);
+    }
+    #hero{
+        padding: 1rem;
+    }
+    main{
+        padding: 0;
+        .dsp-grid{
+            display: var(--dps-grid);
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            max-width: 100%;
+            h3{
+                grid-column: 1 / -1;
+            }
+            article{
+               overflow: hidden; 
+            }
+        }
+        section.last{
+            display: var(--dsp-flex);
+            flex-direction: column;
+            margin: 2rem;
+        }
+    }
+}
+@media(min-width: 1024px){
+    :root{
+        font-size: 20px;
+    }
+    main{
+        .dsp-grid{
+            width: 100%;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
