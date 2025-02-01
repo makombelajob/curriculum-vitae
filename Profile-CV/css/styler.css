@@ -39,6 +39,7 @@ header {
     align-items : center;
     figure {
         margin-top: 0;
+        text-align : center;
         img {
             width: 200px;
             border-radius: 50%;
