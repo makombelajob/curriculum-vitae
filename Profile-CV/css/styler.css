@@ -36,6 +36,7 @@ header {
     display : var(--dsp-flex);
     flex-direction : column;
     gap : 1rem;
+    align-items : center;
     figure {
         margin-top: 0;
         img {
