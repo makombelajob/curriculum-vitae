@@ -163,6 +163,9 @@ footer{
         display: var(--dsp-flex);
         flex-direction: column;
         align-items: var(--txt-aln);
+        figure img {
+            width: 300px;
+        }
     }
     #hero{
         padding: 1rem;
@@ -191,6 +194,11 @@ footer{
     :root{
         font-size: 20px;
     }
+    header figure {
+        img{
+            width: 400px;
+        }
+    }
     main{
         width: 100%;
         .dsp-grid{
@@ -198,11 +206,13 @@ footer{
         }
     }
 }
-<<<<<<< HEAD
 @media(min-width: 1440px){
     :root{
         font-size: 25px;
     }
+    header figure {
+        img {
+            width : 500px
+        }
+    }
 }
-=======
->>>>>>> 9795e3d39f3f8e7a0b878938abecf1e9a12cb4cd
