@@ -35,6 +35,7 @@ header {
     padding: 1rem;
     figure {
         margin-top: 0;
+        /* text-align: var(--txt-aln); */
         img {
             width: 200px;
             border-radius: 50%;
@@ -191,9 +192,14 @@ footer{
         font-size: 20px;
     }
     main{
+        width: 100%;
         .dsp-grid{
-            width: 100%;
             grid-template-columns: repeat(4, 1fr);
         }
+    }
+}
+@media(min-width: 1440px){
+    :root{
+        font-size: 25px;
     }
 }
