@@ -35,7 +35,7 @@ header {
     padding: 1rem;
     figure {
         margin-top: 0;
-        /* text-align: var(--txt-aln); */
+        text-align : center;
         img {
             width: 200px;
             border-radius: 50%;
@@ -198,8 +198,11 @@ footer{
         }
     }
 }
+<<<<<<< HEAD
 @media(min-width: 1440px){
     :root{
         font-size: 25px;
     }
 }
+=======
+>>>>>>> 9795e3d39f3f8e7a0b878938abecf1e9a12cb4cd
